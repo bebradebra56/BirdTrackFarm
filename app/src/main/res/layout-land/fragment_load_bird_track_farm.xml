@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/birdTrackFarmBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bird_track_farm_land_back" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/birdTrackFarmLoadingGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="birdTrackFarmProgress, birdTrackFarmProgressText" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/birdTrackFarmStateGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:constraint_referenced_ids="birdTrackFarmConnectionState" />
+
+
+    <ImageView
+        android:id="@+id/birdTrackFarmProgressText"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542"
+        app:srcCompat="@drawable/bird_track_farm_loadi" />
+
+    <ProgressBar
+        android:id="@+id/birdTrackFarmProgress"
+        android:layout_width="149dp"
+        android:layout_height="153dp"
+        android:indeterminateTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/birdTrackFarmProgressText"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/birdTrackFarmConnectionState"
+        android:layout_width="0dp"
+        android:layout_height="248dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        app:srcCompat="@drawable/bird_track_farm_state" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/birdTrackFarmNotiGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="birdTrackFarmNotifText,birdTrackFarmGrandButton,birdTrackFarmSkipButton,birdTrackFarmNotifText2,birdTrackFarmNotiBack,birdTrackFarmLogo" />
+
+    <ImageView
+        android:id="@+id/birdTrackFarmNotiBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/birdTrackFarmBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bird_track_farm_land" />
+
+    <ImageView
+        android:id="@+id/birdTrackFarmLogo"
+        android:layout_width="270dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toTopOf="@+id/birdTrackFarmGrandButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/birdTrackFarmGrandButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/bird_track_farm_logo" />
+
+    <TextView
+        android:id="@+id/birdTrackFarmNotifText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/lalezar"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Allow notifications about bonuses and promos"
+        android:textColor="@color/white"
+        android:textSize="31sp"
+        app:layout_constraintBottom_toTopOf="@+id/birdTrackFarmNotifText2"
+        app:layout_constraintEnd_toStartOf="@+id/birdTrackFarmGrandButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/birdTrackFarmBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lineHeight="30dp" />
+
+    <Button
+        android:id="@+id/birdTrackFarmGrandButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/bird_track_farm_btn"
+        android:fontFamily="@font/lalezar"
+        android:text="Yes, I Want Bonuses!"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/birdTrackFarmSkipButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/birdTrackFarmNotifText" />
+
+    <Button
+        android:id="@+id/birdTrackFarmSkipButton"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/bird_track_farm_skip"
+        android:fontFamily="@font/lalezar"
+        android:gravity="center"
+        android:shadowColor="@color/white"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Skip"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/birdTrackFarmGrandButton"
+        app:layout_constraintStart_toStartOf="@+id/birdTrackFarmGrandButton" />
+
+
+    <TextView
+        android:id="@+id/birdTrackFarmNotifText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lalezar"
+        android:letterSpacing="0"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Stay tuned with best offers from our casino"
+        android:textColor="#BEFFFFFF"
+
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/birdTrackFarmSkipButton"
+        app:layout_constraintEnd_toEndOf="@+id/birdTrackFarmNotifText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/birdTrackFarmNotifText"
+        app:lineHeight="35dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

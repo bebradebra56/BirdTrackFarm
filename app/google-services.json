@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "101290124683",
+    "project_id": "birdtrackfarm-2f34c",
+    "storage_bucket": "birdtrackfarm-2f34c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101290124683:android:4d4b71ea734532f55a7b8e",
+        "android_client_info": {
+          "package_name": "com.birdtracks.farmbird"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj6Xoknni7f6niNWpGoqWinPdgK6gkpxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
